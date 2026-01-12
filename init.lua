@@ -14,6 +14,7 @@ vim.g.mapleader = ' '
 
 -- Select all amb <leader>a
 vim.keymap.set('n', '<leader>a', 'ggVG', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>gs', vim.cmd.Git, { desc = 'Git status (Fugitive)' })
 -- Print the line number in front of each line
 -- Find files
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
